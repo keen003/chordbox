@@ -1,0 +1,41 @@
+body {
+  background: #333;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+.grid_container {
+    display: grid;
+    width: 500px;
+    height: 400px;
+    grid-template-columns: repeat(4, 95px);
+    grid-template-rows: repeat(6, 62px);
+    background: url("images/frets.png");
+    align-items: center;
+    justify-items: center;
+}
+
+.grid_container > div {
+    margin-left: 3px;
+    margin-top: 32px;
+}
+
+.hover_button {
+    opacity: 0;
+}
+
+.hover_button:hover {
+    opacity: 0.3;
+}
+
+#resetFret {
+    position: absolute;
+    top: 480px;
+    left: 10px;
+}
+
+#exportPng {
+    position: absolute;
+    top: 480px;
+    left: 375px;
+}
