@@ -6,18 +6,19 @@ body {
 
 .grid_container {
     display: grid;
-    width: 500px;
-    height: 400px;
-    grid-template-columns: repeat(4, 95px);
-    grid-template-rows: repeat(6, 62px);
-    background: url("images/frets.png");
+    width: 465px;
+    height: 740px;
+    grid-template-columns: repeat(3, 145px);
+    grid-template-rows: 120px 118px 120px 120px 150px 125px;
+    background: url("images/background.png");
+    background-size: 50%;
     align-items: center;
-    justify-items: center;
+    justify-items: start;
 }
 
 .grid_container > div {
-    margin-left: 3px;
-    margin-top: 32px;
+    margin-left: 53px;
+    margin-top: 0px;
 }
 
 .hover_button {
@@ -30,12 +31,18 @@ body {
 
 #resetFret {
     position: absolute;
-    top: 480px;
+    top: 820px;
     left: 10px;
 }
 
 #exportPng {
     position: absolute;
-    top: 480px;
-    left: 375px;
+    top: 820px;
+    left: 340px;
+}
+
+#exportGif {
+    position: absolute;
+    top: 860px;
+    left: 340px;
 }
