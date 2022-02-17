@@ -8,16 +8,16 @@ body {
     display: grid;
     width: 465px;
     height: 740px;
-    grid-template-columns: repeat(3, 145px);
-    grid-template-rows: 120px 118px 120px 120px 150px 125px;
+    grid-template-columns: 145px 145px 144px;
+    grid-template-rows: 117px 115px 116px 115px 145px 125px;
     background: url("images/background.png");
-    background-size: 50%;
+    background-size: 100%;
     align-items: center;
     justify-items: start;
 }
 
 .grid_container > div {
-    margin-left: 53px;
+    margin-left: 52px;
     margin-top: 0px;
 }
 
