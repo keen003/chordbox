@@ -31,18 +31,21 @@ body {
 
 #resetFret {
     position: absolute;
-    top: 820px;
-    left: 10px;
+    top: 800px;
+    left: 40px;
 }
 
 #exportPng {
     position: absolute;
-    top: 820px;
-    left: 340px;
+    top: 800px;
+    left: 337px;
 }
 
-#exportGif {
-    position: absolute;
-    top: 860px;
-    left: 340px;
+.button {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
 }
