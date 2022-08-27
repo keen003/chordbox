@@ -4,6 +4,12 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.shell{
+    display: flex;
+    align-items: center;
+    flex-direction: column;  
+}
+
 .grid_container {
     display: grid;
     width: 465px;
@@ -16,29 +22,24 @@ body {
     justify-items: start;
 }
 
-.grid_container > div {
-    margin-left: 52px;
-    margin-top: 0px;
+.buttons {
+    display: flex;
+    flex-direction: row;
+    width: 370px;
+    justify-content: space-between;
+}
+
+.button {
+    width: 120px;
 }
 
 .hover_button {
+    margin-left: 52px;
     opacity: 0;
 }
 
 .hover_button:hover {
     opacity: 0.3;
-}
-
-#resetFret {
-    position: absolute;
-    top: 800px;
-    left: 40px;
-}
-
-#exportPng {
-    position: absolute;
-    top: 800px;
-    left: 337px;
 }
 
 .button {

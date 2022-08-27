@@ -10,68 +10,72 @@
     <script src="https://cdn.jsdelivr.net/g/filesaver.js"></script>
 </head>
 <body>
-    <h2>Chord Box</h2>
-    <div class="grid_container" id="container">
-        <div class ="hover_button" id="button0">
-            <img src="images/hover_button.png" id="button_img0" onclick="switchButton(0)">
+    <div class="shell">
+        <h1>ChordBox</h1>
+        <div class="grid_container" id="container">
+            <div class ="hover_button" id="button0">
+                <img src="images/hover_button.png" id="button_img0" onclick="switchButton(0)">
+            </div>
+            <div class ="hover_button" id="button6">
+                <img src="images/hover_button.png"  id="button_img6" onclick="switchButton(6)">
+            </div>
+            <div class ="hover_button" id="button12">
+                <img src="images/hover_button.png" id="button_img12" onclick="switchButton(12)">
+            </div>
+            <div class ="hover_button" id="button1">
+                <img src="images/hover_button.png" id="button_img1" onclick="switchButton(1)">
+            </div>
+            <div class ="hover_button" id="button7">
+                <img src="images/hover_button.png" id="button_img7"  onclick="switchButton(7)">
+            </div>
+            <div class ="hover_button" id="button13">
+                <img src="images/hover_button.png" id="button_img13" onclick="switchButton(13)">
+            </div>
+            <div class ="hover_button" id="button2">
+                <img src="images/hover_button.png" id="button_img2" onclick="switchButton(2)">
+            </div>
+            <div class ="hover_button" id="button8">
+                <img src="images/hover_button.png" id="button_img8" onclick="switchButton(8)">
+            </div>
+            <div class ="hover_button" id="button14">
+                <img src="images/hover_button.png" id="button_img14" onclick="switchButton(14)">
+            </div>
+            <div class ="hover_button" id="button3">
+                <img src="images/hover_button.png" id="button_img3" onclick="switchButton(3)">
+            </div>
+            <div class ="hover_button" id="button9">
+                <img src="images/hover_button.png" id="button_img9" onclick="switchButton(9)">
+            </div>
+            <div class ="hover_button" id="button15">
+                <img src="images/hover_button.png" id="button_img15" onclick="switchButton(15)">
+            </div>
+            <div class ="hover_button" id="button4">
+                <img src="images/hover_button.png" id="button_img4" onclick="switchButton(4)">
+            </div>
+            <div class ="hover_button" id="button10">
+                <img src="images/hover_button.png" id="button_img10" onclick="switchButton(10)">
+            </div>
+            <div class ="hover_button" id="button16">
+                <img src="images/hover_button.png" id="button_img16" onclick="switchButton(16)">
+            </div>
+            <div class ="hover_button" id="button5">
+                <img src="images/hover_button.png" id="button_img5" onclick="switchButton(5)">
+            </div>
+            <div class ="hover_button" id="button11">
+                <img src="images/hover_button.png" id="button_img11" onclick="switchButton(11)">
+            </div>
+            <div class ="hover_button" id="button17">
+                <img src="images/hover_button.png" id="button_img17" onclick="switchButton(17)">
+            </div>
         </div>
-        <div class ="hover_button" id="button6">
-            <img src="images/hover_button.png"  id="button_img6" onclick="switchButton(6)">
+        <div class="buttons">
+            <div>
+                <input id="resetFret" class="button" type="button" value="RESET" onclick="resetFret()">
+            </div>
+            <div>
+                <input id="exportPng" class="button" type="button" value="Export PNG" onclick="exportPng()">
+            </div>
         </div>
-        <div class ="hover_button" id="button12">
-            <img src="images/hover_button.png" id="button_img12" onclick="switchButton(12)">
-        </div>
-        <div class ="hover_button" id="button1">
-            <img src="images/hover_button.png" id="button_img1" onclick="switchButton(1)">
-        </div>
-        <div class ="hover_button" id="button7">
-            <img src="images/hover_button.png" id="button_img7"  onclick="switchButton(7)">
-        </div>
-        <div class ="hover_button" id="button13">
-            <img src="images/hover_button.png" id="button_img13" onclick="switchButton(13)">
-        </div>
-        <div class ="hover_button" id="button2">
-            <img src="images/hover_button.png" id="button_img2" onclick="switchButton(2)">
-        </div>
-        <div class ="hover_button" id="button8">
-            <img src="images/hover_button.png" id="button_img8" onclick="switchButton(8)">
-        </div>
-        <div class ="hover_button" id="button14">
-            <img src="images/hover_button.png" id="button_img14" onclick="switchButton(14)">
-        </div>
-        <div class ="hover_button" id="button3">
-            <img src="images/hover_button.png" id="button_img3" onclick="switchButton(3)">
-        </div>
-        <div class ="hover_button" id="button9">
-            <img src="images/hover_button.png" id="button_img9" onclick="switchButton(9)">
-        </div>
-        <div class ="hover_button" id="button15">
-            <img src="images/hover_button.png" id="button_img15" onclick="switchButton(15)">
-        </div>
-        <div class ="hover_button" id="button4">
-            <img src="images/hover_button.png" id="button_img4" onclick="switchButton(4)">
-        </div>
-        <div class ="hover_button" id="button10">
-            <img src="images/hover_button.png" id="button_img10" onclick="switchButton(10)">
-        </div>
-        <div class ="hover_button" id="button16">
-            <img src="images/hover_button.png" id="button_img16" onclick="switchButton(16)">
-        </div>
-        <div class ="hover_button" id="button5">
-            <img src="images/hover_button.png" id="button_img5" onclick="switchButton(5)">
-        </div>
-        <div class ="hover_button" id="button11">
-            <img src="images/hover_button.png" id="button_img11" onclick="switchButton(11)">
-        </div>
-        <div class ="hover_button" id="button17">
-            <img src="images/hover_button.png" id="button_img17" onclick="switchButton(17)">
-        </div>
-    </div>
-    <div>
-        <input id="resetFret" class="button" type="button" value="RESET" onclick="resetFret()">
-    </div>
-    <div>
-        <input id="exportPng" class="button" type="button" value="Export PNG" onclick="exportPng()">
     </div>
 </body>
 </html>
