@@ -22,6 +22,80 @@ function switchButton(button_num)
             button_opc.style.opacity = "";
         }
 
+    let button0 = document.getElementById("button_img0");
+    let button1 = document.getElementById("button_img1");
+    let button2 = document.getElementById("button_img2");
+    let button3 = document.getElementById("button_img3");
+    let button4 = document.getElementById("button_img4");
+    let button5 = document.getElementById("button_img5");
+    let bare2 = document.getElementById("bare2");
+    let bare3 = document.getElementById("bare3");
+    let bare4 = document.getElementById("bare4");
+    let bare5 = document.getElementById("bare5");
+    let bare6 = document.getElementById("bare6");
+    
+    
+    var bare;
+
+    if (button0.src.match('images/button1.png') && button1.src.match('images/button1.png')
+    && button2.src.match('images/button1.png') && button3.src.match('images/button1.png')
+    && button4.src.match('images/button1.png') && button5.src.match('images/button1.png'))
+    {
+        bare6.style.display = "block";
+
+        bare2.style.display = "none";
+        bare3.style.display = "none";
+        bare4.style.display = "none";
+        bare5.style.display = "none";
+    }
+    else if (button0.src.match('images/button1.png') && button1.src.match('images/button1.png')
+    && button2.src.match('images/button1.png') && button3.src.match('images/button1.png')
+    && button4.src.match('images/button1.png'))
+    {
+        bare5.style.display = "block";
+
+        bare2.style.display = "none";
+        bare3.style.display = "none";
+        bare4.style.display = "none";
+        bare6.style.display = "none";
+    }
+    else if (button0.src.match('images/button1.png') && button1.src.match('images/button1.png')
+    && button2.src.match('images/button1.png') && button3.src.match('images/button1.png'))
+    {
+        bare4.style.display = "block";
+
+        bare2.style.display = "none";
+        bare3.style.display = "none";
+        bare6.style.display = "none";
+        bare5.style.display = "none";
+    }
+    else if (button0.src.match('images/button1.png') && button1.src.match('images/button1.png')
+    && button2.src.match('images/button1.png'))
+    {
+        bare3.style.display = "block";
+
+        bare2.style.display = "none";
+        bare6.style.display = "none";
+        bare4.style.display = "none";
+        bare5.style.display = "none";
+    }
+    else if (button0.src.match('images/button1.png') && button1.src.match('images/button1.png'))
+    {
+        bare2.style.display = "block";
+
+        bare6.style.display = "none";
+        bare3.style.display = "none";
+        bare4.style.display = "none";
+        bare5.style.display = "none";
+    }
+    else
+    {
+        bare2.style.display = "none";
+        bare3.style.display = "none";
+        bare4.style.display = "none";
+        bare5.style.display = "none";
+        bare6.style.display = "none";
+    }
 }
 
 function resetFret()
@@ -34,6 +108,17 @@ function resetFret()
         buttons[i].src = "images/hover_button.png";
         buttons_opc.style.opacity = "";
     }
+
+    let bare2 = document.getElementById("bare2");
+    let bare3 = document.getElementById("bare3");
+    let bare4 = document.getElementById("bare4");
+    let bare5 = document.getElementById("bare5");
+    let bare6 = document.getElementById("bare6");
+    bare2.style.display = "none";
+    bare3.style.display = "none";
+    bare4.style.display = "none";
+    bare5.style.display = "none";
+    bare6.style.display = "none";
 }
 
 function exportPng()
