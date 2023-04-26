@@ -3,7 +3,7 @@ function switchButton(button_num)
 {
     let button_img = document.getElementById("button_img"+button_num);
     let button_opc = document.getElementById("button"+button_num);
-        console.log("button"+button_num);
+        //console.log("button"+button_num);
         if (button_img.src.match('images/hover_button.png'))
         {
             button_img.src = "images/button1.png";
@@ -41,60 +41,60 @@ function switchButton(button_num)
     && button2.src.match('images/button1.png') && button3.src.match('images/button1.png')
     && button4.src.match('images/button1.png') && button5.src.match('images/button1.png'))
     {
-        bare6.style.display = "block";
+        bare6.style.opacity = "1";
 
-        bare2.style.display = "none";
-        bare3.style.display = "none";
-        bare4.style.display = "none";
-        bare5.style.display = "none";
+        bare2.style.opacity = "0";
+        bare3.style.opacity = "0";
+        bare4.style.opacity = "0";
+        bare5.style.opacity = "0";
     }
     else if (button0.src.match('images/button1.png') && button1.src.match('images/button1.png')
     && button2.src.match('images/button1.png') && button3.src.match('images/button1.png')
     && button4.src.match('images/button1.png'))
     {
-        bare5.style.display = "block";
+        bare5.style.opacity = "1";
 
-        bare2.style.display = "none";
-        bare3.style.display = "none";
-        bare4.style.display = "none";
-        bare6.style.display = "none";
+        bare2.style.opacity = "0";
+        bare3.style.opacity = "0";
+        bare4.style.opacity = "0";
+        bare6.style.opacity = "0";
     }
     else if (button0.src.match('images/button1.png') && button1.src.match('images/button1.png')
     && button2.src.match('images/button1.png') && button3.src.match('images/button1.png'))
     {
-        bare4.style.display = "block";
+        bare4.style.opacity = "1";
 
-        bare2.style.display = "none";
-        bare3.style.display = "none";
-        bare6.style.display = "none";
-        bare5.style.display = "none";
+        bare2.style.opacity = "0";
+        bare3.style.opacity = "0";
+        bare6.style.opacity = "0";
+        bare5.style.opacity = "0";
     }
     else if (button0.src.match('images/button1.png') && button1.src.match('images/button1.png')
     && button2.src.match('images/button1.png'))
     {
-        bare3.style.display = "block";
+        bare3.style.opacity = "1";
 
-        bare2.style.display = "none";
-        bare6.style.display = "none";
-        bare4.style.display = "none";
-        bare5.style.display = "none";
+        bare2.style.opacity = "0";
+        bare6.style.opacity = "0";
+        bare4.style.opacity = "0";
+        bare5.style.opacity = "0";
     }
     else if (button0.src.match('images/button1.png') && button1.src.match('images/button1.png'))
     {
-        bare2.style.display = "block";
+        bare2.style.opacity = "1";
 
-        bare6.style.display = "none";
-        bare3.style.display = "none";
-        bare4.style.display = "none";
-        bare5.style.display = "none";
+        bare6.style.opacity = "0";
+        bare3.style.opacity = "0";
+        bare4.style.opacity = "0";
+        bare5.style.opacity = "0";
     }
     else
     {
-        bare2.style.display = "none";
-        bare3.style.display = "none";
-        bare4.style.display = "none";
-        bare5.style.display = "none";
-        bare6.style.display = "none";
+        bare2.style.opacity = "0";
+        bare3.style.opacity = "0";
+        bare4.style.opacity = "0";
+        bare5.style.opacity = "0";
+        bare6.style.opacity = "0";
     }
 }
 
@@ -114,18 +114,21 @@ function resetFret()
     let bare4 = document.getElementById("bare4");
     let bare5 = document.getElementById("bare5");
     let bare6 = document.getElementById("bare6");
-    bare2.style.display = "none";
-    bare3.style.display = "none";
-    bare4.style.display = "none";
-    bare5.style.display = "none";
-    bare6.style.display = "none";
+    bare2.style.opacity = "0";
+    bare3.style.opacity = "0";
+    bare4.style.opacity = "0";
+    bare5.style.opacity = "0";
+    bare6.style.opacity = "0";
 }
 
 function exportPng()
 {
+    var timestamp = new Date().getTime();
+    var capture = document.getElementById('capture');
+    console.log(capture)
 
-    domtoimage.toBlob(document.getElementById('container'))
+    domtoimage.toBlob(capture)
         .then(function (blob) {
-            window.saveAs(blob, 'chord_box.png');
+            window.saveAs(blob, timestamp);
         })
 }
