@@ -68,24 +68,125 @@
                 <div class ="hover_button" id="button17">
                     <img src="images/hover_button.png" id="button_img17" onclick="switchButton(17)">
                 </div>
-                <div class="bare" id="bare2">
-                    <img src="images/bare2.png" alt="">
+                <div class="barre" id="barre1">
+                    <img src="images/barre1.png" alt="">
                 </div>
-                <div class="bare" id="bare3">
-                    <img src="images/bare3.png" alt="">
+                <div class="barre" id="barre2">
+                    <img src="images/barre2.png" alt="">
                 </div>
-                <div class="bare" id="bare4">
-                    <img src="images/bare4.png" alt="">
+                <div class="barre" id="barre3">
+                    <img src="images/barre3.png" alt="">
                 </div>
-                <div class="bare" id="bare5">
-                    <img src="images/bare5.png" alt="">
+                <div class="barre" id="barre4">
+                    <img src="images/barre4.png" alt="">
                 </div>
-                <div class="bare" id="bare6">
-                    <img src="images/bare6.png" alt="">
+                <div class="barre" id="barre5">
+                    <img src="images/barre5.png" alt="">
+                </div>
+                <div class="barre" id="barre6">
+                    <img src="images/barre6.png" alt="">
+                </div>
+                <div class="barre" id="barre7">
+                    <img src="images/barre7.png" alt="">
                 </div>
             </div>
         </div>
         <div class="buttons">
+            <select id="dropdown_barre" name="barre">
+                <option value="" disabled selected>Barre</option>
+                <option value="barre1">I</option>
+                <option value="barre2">II</option>
+                <option value="barre3">III</option>
+                <option value="barre4">IV</option>
+                <option value="barre5">V</option>
+                <option value="barre6">VI</option>
+                <option value="barre7">VII</option>
+            </select>
+            <script>
+                const barre = document.getElementById("dropdown_barre");
+
+                barre.addEventListener("change", function() {
+                    const selectedOption = barre.value;
+                    const barre1_img = document.getElementById("barre1");
+                    const barre2_img = document.getElementById("barre2");
+                    const barre3_img = document.getElementById("barre3");
+                    const barre4_img = document.getElementById("barre4");
+                    const barre5_img = document.getElementById("barre5");
+                    const barre6_img = document.getElementById("barre6");
+                    const barre7_img = document.getElementById("barre7");
+
+                    if (selectedOption === 'barre1')
+                    {   
+                        barre1_img.style.opacity = "1";
+                        barre2_img.style.opacity = "0";
+                        barre3_img.style.opacity = "0";
+                        barre4_img.style.opacity = "0";
+                        barre5_img.style.opacity = "0";
+                        barre6_img.style.opacity = "0";
+                        barre7_img.style.opacity = "0";
+                    }
+                    else if (selectedOption === 'barre2')
+                    {   
+                        barre1_img.style.opacity = "0";
+                        barre2_img.style.opacity = "1";
+                        barre3_img.style.opacity = "0";
+                        barre4_img.style.opacity = "0";
+                        barre5_img.style.opacity = "0";
+                        barre6_img.style.opacity = "0";
+                        barre7_img.style.opacity = "0";
+                    }
+                    else if (selectedOption === 'barre3')
+                    {   
+                        barre1_img.style.opacity = "0";
+                        barre2_img.style.opacity = "0";
+                        barre3_img.style.opacity = "1";
+                        barre4_img.style.opacity = "0";
+                        barre5_img.style.opacity = "0";
+                        barre6_img.style.opacity = "0";
+                        barre7_img.style.opacity = "0";
+                    }
+                    else if (selectedOption === 'barre4')
+                    {   
+                        barre1_img.style.opacity = "0";
+                        barre2_img.style.opacity = "0";
+                        barre3_img.style.opacity = "0";
+                        barre4_img.style.opacity = "1";
+                        barre5_img.style.opacity = "0";
+                        barre6_img.style.opacity = "0";
+                        barre7_img.style.opacity = "0";
+                    }
+                    else if (selectedOption === 'barre5')
+                    {   
+                        barre1_img.style.opacity = "0";
+                        barre2_img.style.opacity = "0";
+                        barre3_img.style.opacity = "0";
+                        barre4_img.style.opacity = "0";
+                        barre5_img.style.opacity = "1";
+                        barre6_img.style.opacity = "0";
+                        barre7_img.style.opacity = "0";
+                    }
+                    else if (selectedOption === 'barre6')
+                    {   
+                        barre1_img.style.opacity = "0";
+                        barre2_img.style.opacity = "0";
+                        barre3_img.style.opacity = "0";
+                        barre4_img.style.opacity = "0";
+                        barre5_img.style.opacity = "0";
+                        barre6_img.style.opacity = "1";
+                        barre7_img.style.opacity = "0";
+                    }
+                    else if (selectedOption === 'barre7')
+                    {   
+                        barre1_img.style.opacity = "0";
+                        barre2_img.style.opacity = "0";
+                        barre3_img.style.opacity = "0";
+                        barre4_img.style.opacity = "0";
+                        barre5_img.style.opacity = "0";
+                        barre6_img.style.opacity = "0";
+                        barre7_img.style.opacity = "1";
+                    }
+                });
+            </script>
             <div>
                 <input id="resetFret" class="button" type="button" value="RESET" onclick="resetFret()">
             </div>

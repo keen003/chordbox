@@ -26,7 +26,8 @@ body {
     display: flex;
     flex-direction: row;
     width: 370px;
-    justify-content: space-between;
+    gap: 20px;
+    /* justify-content: space-between; */
 }
 
 .button {
@@ -52,11 +53,11 @@ body {
     cursor: pointer;
 }
 
-.bare {
+.barre {
 
     /* margin-left: -220px; */
     position: absolute;
-    left: 52px;
+    left: 57px;
     top: 11px;
     pointer-events: none;
     opacity: 0;

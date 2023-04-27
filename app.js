@@ -28,74 +28,6 @@ function switchButton(button_num)
     let button3 = document.getElementById("button_img3");
     let button4 = document.getElementById("button_img4");
     let button5 = document.getElementById("button_img5");
-    let bare2 = document.getElementById("bare2");
-    let bare3 = document.getElementById("bare3");
-    let bare4 = document.getElementById("bare4");
-    let bare5 = document.getElementById("bare5");
-    let bare6 = document.getElementById("bare6");
-    
-    
-    var bare;
-
-    if (button0.src.match('images/button1.png') && button1.src.match('images/button1.png')
-    && button2.src.match('images/button1.png') && button3.src.match('images/button1.png')
-    && button4.src.match('images/button1.png') && button5.src.match('images/button1.png'))
-    {
-        bare6.style.opacity = "1";
-
-        bare2.style.opacity = "0";
-        bare3.style.opacity = "0";
-        bare4.style.opacity = "0";
-        bare5.style.opacity = "0";
-    }
-    else if (button0.src.match('images/button1.png') && button1.src.match('images/button1.png')
-    && button2.src.match('images/button1.png') && button3.src.match('images/button1.png')
-    && button4.src.match('images/button1.png'))
-    {
-        bare5.style.opacity = "1";
-
-        bare2.style.opacity = "0";
-        bare3.style.opacity = "0";
-        bare4.style.opacity = "0";
-        bare6.style.opacity = "0";
-    }
-    else if (button0.src.match('images/button1.png') && button1.src.match('images/button1.png')
-    && button2.src.match('images/button1.png') && button3.src.match('images/button1.png'))
-    {
-        bare4.style.opacity = "1";
-
-        bare2.style.opacity = "0";
-        bare3.style.opacity = "0";
-        bare6.style.opacity = "0";
-        bare5.style.opacity = "0";
-    }
-    else if (button0.src.match('images/button1.png') && button1.src.match('images/button1.png')
-    && button2.src.match('images/button1.png'))
-    {
-        bare3.style.opacity = "1";
-
-        bare2.style.opacity = "0";
-        bare6.style.opacity = "0";
-        bare4.style.opacity = "0";
-        bare5.style.opacity = "0";
-    }
-    else if (button0.src.match('images/button1.png') && button1.src.match('images/button1.png'))
-    {
-        bare2.style.opacity = "1";
-
-        bare6.style.opacity = "0";
-        bare3.style.opacity = "0";
-        bare4.style.opacity = "0";
-        bare5.style.opacity = "0";
-    }
-    else
-    {
-        bare2.style.opacity = "0";
-        bare3.style.opacity = "0";
-        bare4.style.opacity = "0";
-        bare5.style.opacity = "0";
-        bare6.style.opacity = "0";
-    }
 }
 
 function resetFret()
@@ -109,16 +41,16 @@ function resetFret()
         buttons_opc.style.opacity = "";
     }
 
-    let bare2 = document.getElementById("bare2");
-    let bare3 = document.getElementById("bare3");
-    let bare4 = document.getElementById("bare4");
-    let bare5 = document.getElementById("bare5");
-    let bare6 = document.getElementById("bare6");
-    bare2.style.opacity = "0";
-    bare3.style.opacity = "0";
-    bare4.style.opacity = "0";
-    bare5.style.opacity = "0";
-    bare6.style.opacity = "0";
+    document.getElementById("barre1").style.opacity = "0";
+    document.getElementById("barre2").style.opacity = "0";
+    document.getElementById("barre3").style.opacity = "0";
+    document.getElementById("barre4").style.opacity = "0";
+    document.getElementById("barre5").style.opacity = "0";
+    document.getElementById("barre6").style.opacity = "0";
+    document.getElementById("barre7").style.opacity = "0";
+
+    const dropdown = document.getElementById("dropdown_barre");
+    dropdown.selectedIndex = 0;
 }
 
 function exportPng()
